@@ -1,8 +1,18 @@
 # Proposed V2 staging manifest
 
-The exact reviewed screenshots, portrait/derivative, temporary resume and approved professional contact information now have explicit public-publication approval. The machine-readable record preserves asset hashes and a contact-section hash. Confidential originals remain prohibited. Only the 49 previously approved legacy deletions are staged; all V2 additions remain unstaged. No commit, push, merge, deployment or Pages change is authorized.
+## Approved résumé replacement
 
-## Proposed additions and modifications
+The user approved the one-page full-width ATS résumé for replacement of the temporary public PDF. Only `public/resume/Kylah_Montealegre_Resume.pdf` is a release asset; the root review source is ignored. The replaced PDF was backed up privately outside the repository and verified before replacement.
+
+- Approved public PDF SHA-256: `b6b2fac7f7639c9120a23f5f5644e86e79d1807f3985108e59dc285afbb92f88`.
+- Internship display: February–June 2025; graduation remains July 2025.
+- Approved email, mobile and LinkedIn are preserved, with matching hyperlinks.
+- All other public asset hashes and the contact-section approval hash remain unchanged.
+- The résumé replacement and factual corrections were reviewed separately. Local staging and one correction commit containing exactly seven modified paths are authorized; no further push, merge, deployment or Pages change is authorized.
+
+The exact reviewed screenshots, portrait/derivative, corrected full-width ATS résumé and approved professional contact information have explicit public-publication approval. The machine-readable record preserves asset hashes and a contact-section hash. Confidential originals remain prohibited. The V2 baseline, including the 49 approved legacy deletions, was committed as `d2e3e9e5f3d518e5e9ab617b33a74047f0301141`; the inventory below records that reviewed baseline. The subsequent correction commit is limited to `.gitignore`, `README.md`, `RELEASE_PLAN.md`, `scripts/release-manifest.json`, `src/data/profile.ts`, `src/main.tsx` and `public/resume/Kylah_Montealegre_Resume.pdf`.
+
+## Reviewed V2 baseline inventory
 
 - `.gitattributes`
 - `.github/workflows/pages.yml`
@@ -51,9 +61,9 @@ The exact reviewed screenshots, portrait/derivative, temporary resume and approv
 - `tsconfig.json`
 - `vite.config.ts`
 
-## Existing tracked V1 files requiring separately approved removal from the V2 tree
+## Historical V1 removals completed in the V2 baseline
 
-Completed locally under explicit cleanup authorization: exactly these 49 deletions are staged for review. No other paths are staged. Their removal does not rewrite history or change legacy-v1/v1.0-legacy; the bundle remains verified.
+Completed under explicit cleanup and baseline commit authorization: exactly these 49 files were removed in the V2 baseline commit. They are not pending deletions in the correction commit. Their removal does not rewrite history or change legacy-v1/v1.0-legacy; the verified recovery bundle remains preserved.
 
 - `css/animate.min.css`
 - `css/aos.css`
@@ -107,12 +117,12 @@ Completed locally under explicit cleanup authorization: exactly these 49 deletio
 
 ## Never stage
 
-- Root ATS.pdf; use only the unchanged approved public r?sum? copy.
+- Root ATS.pdf and Kylah_Montealegre_ATS_FullWidth_Review.pdf; use only the approved public résumé copy.
 - legacy/, .qa/, external private originals/backups, node_modules/, caches, dist/, build-info files, environment files, credentials and machine configuration.
 
 ## Release authorization gates
 
-- Public approval of the exact reviewed screenshots, portrait/derivative, temporary resume and contact information is recorded. Any changed bytes or information require renewed review. Separate Git commit/push and deployment authorization is still required.
+- Public approval of the exact reviewed screenshots, portrait/derivative, corrected full-width ATS résumé and contact information is recorded. Any changed bytes or information require renewed review. One local seven-file correction commit is authorized; a subsequent push and production deployment still require separate authorization.
 - Confirm Pages source and domain before any cutover.
 - Record reviewed asset hashes and explicit publication approval in the manifest only after authorization.
 - On GitHub, preconfigure github-pages required reviewers, prevent self-approval where available, and restrict deployment branches to main. Do not enable release variables before this protection is verified.
@@ -121,8 +131,8 @@ Completed locally under explicit cleanup authorization: exactly these 49 deletio
 
 ## CI actions and limitations
 
-Workflow pins are taken from Vite?s official static-deployment reference. Recheck upstream revisions and security advisories during release review. Node 24 is the supported LTS runtime selected for CI. The workflow has no push or PR trigger. Build gets contents:read; deployment gets pages:write and id-token:write. Only dist is uploaded.
+Workflow pins are taken from Vite’s official static-deployment reference. Recheck upstream revisions and security advisories during release review. Node 24 is the supported LTS runtime selected for CI. The workflow has no push or PR trigger. Build gets contents:read; deployment gets pages:write and id-token:write. Only dist is uploaded.
 
-Portable validation checks source/asset allowlists, exact-case filenames, reviewed asset hashes, common secret patterns, artifact content and base paths. It cannot guarantee image/PDF privacy, verify factual claims or replace human review. Strict release validation can now pass because exact public-content approvals are recorded and all 49 legacy deletions are staged. The manual workflow remains gated by main, release-enable variables, an authorized exact SHA and environment protection. Passing validation does not grant operational authorization.
+Portable validation checks source/asset allowlists, exact-case filenames, reviewed asset hashes, common secret patterns, artifact content and base paths. It cannot guarantee image/PDF privacy, verify factual claims or replace human review. Strict release validation requires exact public-content approvals and the exclusion of all 49 historical V1 paths from the current V2 tree; their removal is already included in the baseline commit. The manual workflow remains gated by main, release-enable variables, an authorized exact SHA and environment protection. Passing validation does not grant operational authorization.
 
 Local QA checks are supplemental and ignored; CI does not depend on them. No Pages setting or environment protection is changed by adding this workflow.

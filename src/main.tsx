@@ -68,7 +68,6 @@ function App() {
               <ul className="responsibility-list"><li>Administrative and procurement documentation support.</li><li>Document organization, tracking, and records management.</li><li>Coordination with internal personnel and stakeholders.</li><li>Maintenance, debugging, and enhancement of an inherited PHP-based Procurement Monitoring System.</li><li>Development of improvements to administrative workflows and system usability.</li></ul>
             </article>
             <article className="timeline"><span className="tiny-label">{internshipDates.start}–{internshipDates.end}</span><h3>IT Support Intern</h3>
-              {internshipDates.provisional && <p className="note date-status">Provisional end date — {internshipDates.end} awaits confirmation.</p>}
               <ul className="responsibility-list"><li>Developed a separate procurement-related web application using Laravel, PHP, and MySQL, contributing to frontend and backend development.</li><li>Performed data encoding, procurement records management, and document organization.</li><li>Provided administrative and technical support for procurement and BAC Secretariat operations.</li><li>Coordinated with office personnel regarding documentation, system requirements, and operational tasks.</li></ul>
               <p className="note">Internship project: Laravel, PHP, MySQL, XAMPP, HTML, CSS, and JavaScript.</p>
             </article>

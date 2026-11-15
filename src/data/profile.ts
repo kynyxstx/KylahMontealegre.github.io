@@ -10,5 +10,5 @@
 export const internshipDates = {
   start: 'February 2025',
   end: 'June 2025',
-  provisional: true,
+  endDate: '2025-06-26',
 }

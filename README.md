@@ -20,16 +20,16 @@ Use the actual port printed by Vite if a port is occupied.
 
 - `src/main.tsx`: six portfolio sections, responsive navigation, persistent light/dark mode, approved professional contact links, and city-level location.
 - `src/components/`: reusable portrait, featured cards, expandable technical case studies, captioned screenshot galleries, and archive controls.
-- `src/data/`: project, archive, and training records. PMS maintenance/redevelopment and the original Laravel internship project remain separate. Unverified technologies are excluded; the internship end date remains provisional.
+- `src/data/`: project, archive, and training records. PMS maintenance/redevelopment and the original Laravel internship project remain separate. Unverified technologies are excluded; the internship end date is confirmed as June 26, 2025, displayed as June 2025.
 - `src/styles.css`: existing editorial layout, theme tokens, focus indicators, responsive behavior, and reduced-motion support.
 - `public/images/`: original portrait plus its separate optimized derivative, eight archive images, and eight flattened sanitized featured screenshots.
-- `public/resume/Kylah_Montealegre_Resume.pdf`: unchanged temporary ATS résumé. View Résumé opens a new tab; Download Résumé uses the download attribute.
+- `public/resume/Kylah_Montealegre_Resume.pdf`: approved one-page, full-width ATS résumé with the confirmed February–June 2025 internship period. View Résumé opens a new tab; Download Résumé uses the download attribute.
 - `scripts/release-manifest.json`: exact proposed source inventory, reviewed asset hashes, explicit publication-review flags and proposed V1 removals.
 - `scripts/validate-release.mjs`: portable source/artifact privacy preflight. `--release` additionally requires recorded public approval and removal of tracked V1 files from the V2 tree.
 
 ## Privacy and publication boundary
 
-The user has explicitly approved public publication of the eight reviewed sanitized screenshots, the graduation portrait and optimized derivative, the unchanged temporary ATS resume, and the approved email/mobile/profile links and city-level location. Approval applies only to the exact reviewed bytes and information recorded in the release manifest. Confidential originals remain prohibited. These content approvals do not authorize staging additions, committing, pushing, merging, deploying, or changing Pages settings.
+The user has explicitly approved public publication of the eight reviewed sanitized screenshots, the graduation portrait and optimized derivative, the corrected one-page full-width ATS résumé, and the approved email/mobile/profile links and city-level location. Approval applies only to the exact reviewed bytes and information recorded in the release manifest. Confidential originals remain prohibited. These content approvals do not authorize staging additions, committing, pushing, merging, deploying, or changing Pages settings.
 
 Private originals remain outside the repository and served workspace. Never copy them into source, public assets or build output. Environment files, credentials, keys, QA artifacts and machine configuration are ignored. The `.env.example` exception is only for a deliberately reviewed, secret-free template; no example file is currently supplied. Vite adds private-path access denial; Git ignore rules alone do not restrict HTTP access.
 
