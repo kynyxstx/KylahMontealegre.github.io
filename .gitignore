@@ -1,0 +1,35 @@
+node_modules/
+dist/
+*.tsbuildinfo
+*.local
+.npm-cache/
+.qa/
+private-project-screenshots/
+**/private-project-screenshots/
+Portfolio-KY-Private/
+
+# Environment, credentials and private machine configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.keystore
+id_rsa*
+id_ed25519*
+credentials.json
+service-account*.json
+secrets.*
+.npmrc
+.aws/
+.codex/
+.agents/
+.vscode/
+.idea/
+*.local.*
+
+# Local source copies; public copies require explicit release review
+/ATS.pdf
+/legacy/
