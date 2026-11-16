@@ -15,7 +15,8 @@ const walk = dir => fs.readdirSync(dir, { withFileTypes: true }).flatMap(entry =
   return entry.isDirectory() ? walk(file) : [file]
 })
 const prohibited = file => file.split('/').some(segment => segment.startsWith('.') && segment !== '.gitkeep'
-  || /^(legacy|private-project-screenshots|portfolio-ky-private|node_modules|backups?|source-backups?)$/i.test(segment)
+  || /^(legacy|certification|private-project-screenshots|portfolio-ky-private|node_modules|backups?|source-backups?)$/i.test(segment)
+  || /_REVIEW\.pdf$/i.test(segment)
   || /^ATS\.pdf$/i.test(segment)
   || /\.(php|pem|key|p12|pfx|bundle|zip|bak|tsbuildinfo)$/i.test(segment)
   || /^(credentials|secrets?|service-account)([.-]|$)/i.test(segment))
@@ -55,7 +56,21 @@ export async function validate({ release = false, artifact = path.join(root, 'di
   }
   const { projects } = await moduleData('src/data/projects.ts')
   const { archiveProjects } = await moduleData('src/data/archive.ts')
+  const { training } = await moduleData('src/data/profile.ts')
   const assetPaths = new Set(manifest.publicAssets.map(asset => asset.file.slice('public/'.length)))
+  const certificateFiles = ['authenticity-provenance-ai.png', 'cybersecurity-for-all.png', 'ngpa-irr.png', 'digital-marketing.png', 'ieee-student-summit.png', 'mos-word-associate.png']
+  const certificatePaths = certificateFiles.map(file => 'images/certifications/' + file)
+  const certificateAssets = manifest.publicAssets.filter(asset => asset.file.startsWith('public/images/certifications/'))
+  if (certificateAssets.length !== 6 || new Set(certificateAssets.map(asset => asset.file)).size !== 6
+    || certificateAssets.some(asset => !certificatePaths.includes(asset.file.slice('public/'.length)) || asset.publicationReviewRequired || !asset.approvalBasis)) fail('Exact six approved certificate assets required')
+  if (training.length !== 6 || new Set(training.map(item => item.preview.filename)).size !== 6) fail('Exact six distinct certificate records required')
+  for (const item of training) {
+    const file = 'images/certifications/' + item.preview.filename
+    if (!item.title || !item.provider || !item.date || !item.type || !/^[a-z0-9-]+\.png$/.test(item.preview.filename)) fail('Invalid certificate metadata')
+    if (item.preview.publicationApproved && !assetPaths.has(file)) fail('Approved certificate preview absent from reviewed inventory')
+    if (!item.preview.publicationApproved && assetPaths.has(file)) fail('Publication-pending certificate must remain outside public assets')
+    if (!item.preview.publicationApproved || !certificatePaths.includes(file)) fail('Certificate record lacks exact public approval')
+  }
   for (const project of projects) {
     for (const image of [project.preview, ...(project.caseStudyImages || [])].filter(Boolean)) {
       if (!image.approved || !image.alt || !assetPaths.has('images/projects/' + image.filename)) fail('Unreviewed or invalid project image reference')

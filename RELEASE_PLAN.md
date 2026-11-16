@@ -1,6 +1,18 @@
 # Proposed V2 staging manifest
 
-## Approved résumé replacement
+## Current local review: hybrid résumé and credential gallery
+
+The latest authorized work is local implementation only: no staging, commits, pushes, PR changes, merges or deployment. Earlier authorizations below describe completed release history and do not authorize new Git operations.
+
+- The approved `Kylah_Montealegre_ATS_Hybrid_Updated_REVIEW.pdf` replaces the public résumé byte-for-byte. Its current SHA-256 is `1d617a987d37804561b79f520895f495cb0d7c07e4dba63a461671ec035d25d4`. The previous full-width public PDF was hash-verified in private backup before replacement.
+- Six certificate documents were inspected. The GPPB document is participation, not completion. The supplied Microsoft image states Word Associate (Office 2019), earned August 9, 2022; issuer verification has not been independently performed.
+- The user separately approved all six exact sanitized certificate previews for public inclusion. Copies are integrated locally under `public/images/certifications/`; the manifest records each exact reviewed SHA-256 and explicit approval. Original documents and contact sheets remain outside the repository and served workspace, excluded from the release inventory.
+- The gallery loads the approved PNGs directly with the repository base path, preserves complete images with contain fit, and supports responsive cards, keyboard enlargement, fallbacks and Show More/Less. The temporary local-file selection control has been removed. Only the previously reviewed sanitized pixels are public assets; private signatures, codes and verification links remain excluded.
+- The source inventory gains `src/components/CertificationsGallery.tsx`; previously approved screenshot, portrait, favicon and contact hashes are unchanged.
+
+The remaining sections preserve earlier baseline and full-width résumé approval history; the hybrid PDF hash above is the current approval.
+
+## Previous approved résumé replacement
 
 The user approved the one-page full-width ATS résumé for replacement of the temporary public PDF. Only `public/resume/Kylah_Montealegre_Resume.pdf` is a release asset; the root review source is ignored. The replaced PDF was backed up privately outside the repository and verified before replacement.
 
@@ -28,6 +40,12 @@ The exact reviewed screenshots, portrait/derivative, corrected full-width ATS r�
 - `public/favicon.svg`
 - `public/images/profile-ky-720.jpg`
 - `public/images/profile-ky.png`
+- `public/images/certifications/authenticity-provenance-ai.png`
+- `public/images/certifications/cybersecurity-for-all.png`
+- `public/images/certifications/digital-marketing.png`
+- `public/images/certifications/ieee-student-summit.png`
+- `public/images/certifications/mos-word-associate.png`
+- `public/images/certifications/ngpa-irr.png`
 - `public/images/projects/.gitkeep`
 - `public/images/projects/archive/atm.jpg`
 - `public/images/projects/archive/chess.PNG`
@@ -49,6 +67,7 @@ The exact reviewed screenshots, portrait/derivative, corrected full-width ATS r�
 - `scripts/release-manifest.json`
 - `scripts/validate-release.mjs`
 - `src/components/CaseStudyGallery.tsx`
+- `src/components/CertificationsGallery.tsx`
 - `src/components/ProfileImage.tsx`
 - `src/components/ProjectArchive.tsx`
 - `src/components/ProjectCard.tsx`
@@ -117,7 +136,7 @@ Completed under explicit cleanup and baseline commit authorization: exactly thes
 
 ## Never stage
 
-- Root ATS.pdf and Kylah_Montealegre_ATS_FullWidth_Review.pdf; use only the approved public résumé copy.
+- Root ATS.pdf, Kylah_Montealegre_ATS_FullWidth_Review.pdf, Kylah_Montealegre_ATS_Hybrid_Updated_REVIEW.pdf and Certification/; use only the approved public résumé copy.
 - legacy/, .qa/, external private originals/backups, node_modules/, caches, dist/, build-info files, environment files, credentials and machine configuration.
 
 ## Release authorization gates

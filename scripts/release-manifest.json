@@ -18,6 +18,12 @@
     "public/favicon.svg",
     "public/images/profile-ky-720.jpg",
     "public/images/profile-ky.png",
+    "public/images/certifications/authenticity-provenance-ai.png",
+    "public/images/certifications/cybersecurity-for-all.png",
+    "public/images/certifications/digital-marketing.png",
+    "public/images/certifications/ieee-student-summit.png",
+    "public/images/certifications/mos-word-associate.png",
+    "public/images/certifications/ngpa-irr.png",
     "public/images/projects/.gitkeep",
     "public/images/projects/archive/atm.jpg",
     "public/images/projects/archive/chess.PNG",
@@ -39,6 +45,7 @@
     "scripts/release-manifest.json",
     "scripts/validate-release.mjs",
     "src/components/CaseStudyGallery.tsx",
+    "src/components/CertificationsGallery.tsx",
     "src/components/ProfileImage.tsx",
     "src/components/ProjectArchive.tsx",
     "src/components/ProjectCard.tsx",
@@ -237,9 +244,45 @@
     },
     {
       "file": "public/resume/Kylah_Montealegre_Resume.pdf",
-      "sha256": "b6b2fac7f7639c9120a23f5f5644e86e79d1807f3985108e59dc285afbb92f88",
+      "sha256": "1d617a987d37804561b79f520895f495cb0d7c07e4dba63a461671ec035d25d4",
       "publicationReviewRequired": false,
-      "approvalBasis": "Explicit user approval of Kylah_Montealegre_ATS_FullWidth_Review.pdf for replacement of the public resume; exact reviewed bytes"
+      "approvalBasis": "Explicit user approval of Kylah_Montealegre_ATS_Hybrid_Updated_REVIEW.pdf for replacement of the public resume; exact reviewed bytes"
+    },
+    {
+      "file": "public/images/certifications/authenticity-provenance-ai.png",
+      "sha256": "3a9ec8ac94cb74efaa0f1795b748d4311024270f1c2b1ec14e379653970133c5",
+      "publicationReviewRequired": false,
+      "approvalBasis": "Explicit user public-publication approval of this exact privacy-sanitized certificate preview; confidential original excluded"
+    },
+    {
+      "file": "public/images/certifications/cybersecurity-for-all.png",
+      "sha256": "569b2804b40bb65a3ac6fd873a3e1a5613fe0482e228a2469520867bd8943e74",
+      "publicationReviewRequired": false,
+      "approvalBasis": "Explicit user public-publication approval of this exact privacy-sanitized certificate preview; confidential original excluded"
+    },
+    {
+      "file": "public/images/certifications/ngpa-irr.png",
+      "sha256": "d8bb77819990f8e8126bc95629f0228e3f942f975cd377cb1d36cae4e9dec293",
+      "publicationReviewRequired": false,
+      "approvalBasis": "Explicit user public-publication approval of this exact privacy-sanitized certificate preview; confidential original excluded"
+    },
+    {
+      "file": "public/images/certifications/digital-marketing.png",
+      "sha256": "6be9aa9a0b21ad8026c8a06b7509b9a97880c430b25a75150f0dacb2ad027a72",
+      "publicationReviewRequired": false,
+      "approvalBasis": "Explicit user public-publication approval of this exact privacy-sanitized certificate preview; confidential original excluded"
+    },
+    {
+      "file": "public/images/certifications/ieee-student-summit.png",
+      "sha256": "342cc831b9512cb5ba67aa005e4707238c5536d434912259fd38b0260a46267b",
+      "publicationReviewRequired": false,
+      "approvalBasis": "Explicit user public-publication approval of this exact privacy-sanitized certificate preview; confidential original excluded"
+    },
+    {
+      "file": "public/images/certifications/mos-word-associate.png",
+      "sha256": "36b10b7563ea0c8b8a3d1855bd6e69d0f10ed53f8cea58d845f004dcacebbebb",
+      "publicationReviewRequired": false,
+      "approvalBasis": "Explicit user public-publication approval of this exact privacy-sanitized certificate preview; confidential original excluded"
     }
   ],
   "approvalScope": "Exact reviewed public asset bytes and approved contact information only. No Git commit, push, merge, deployment, or Pages configuration change is authorized.",

@@ -22,24 +22,25 @@ Use the actual port printed by Vite if a port is occupied.
 - `src/components/`: reusable portrait, featured cards, expandable technical case studies, captioned screenshot galleries, and archive controls.
 - `src/data/`: project, archive, and training records. PMS maintenance/redevelopment and the original Laravel internship project remain separate. Unverified technologies are excluded; the internship end date is confirmed as June 26, 2025, displayed as June 2025.
 - `src/styles.css`: existing editorial layout, theme tokens, focus indicators, responsive behavior, and reduced-motion support.
-- `public/images/`: original portrait plus its separate optimized derivative, eight archive images, and eight flattened sanitized featured screenshots.
-- `public/resume/Kylah_Montealegre_Resume.pdf`: approved one-page, full-width ATS résumé with the confirmed February–June 2025 internship period. View Résumé opens a new tab; Download Résumé uses the download attribute.
+- `public/images/`: original portrait plus its separate optimized derivative, eight archive images, eight flattened sanitized featured screenshots, and six explicitly approved sanitized certificate previews.
+- `public/resume/Kylah_Montealegre_Resume.pdf`: approved one-page hybrid ATS résumé with confirmed dates, contact links and selected projects. View Résumé opens a new tab; Download Résumé uses the download attribute.
+- `CertificationsGallery`: document-based credentials and training after Education, with responsive cards, Show More/Less, image fallbacks and keyboard-accessible enlargement. Six approved previews load from `public/images/certifications/` using the Vite base path and `object-fit: contain`. The Microsoft classification states what the supplied document says without claiming independent issuer verification.
 - `scripts/release-manifest.json`: exact proposed source inventory, reviewed asset hashes, explicit publication-review flags and proposed V1 removals.
 - `scripts/validate-release.mjs`: portable source/artifact privacy preflight. `--release` additionally requires recorded public approval and removal of tracked V1 files from the V2 tree.
 
 ## Privacy and publication boundary
 
-The user has explicitly approved public publication of the eight reviewed sanitized screenshots, the graduation portrait and optimized derivative, the corrected one-page full-width ATS résumé, and the approved email/mobile/profile links and city-level location. Approval applies only to the exact reviewed bytes and information recorded in the release manifest. Confidential originals remain prohibited. These content approvals do not authorize staging additions, committing, pushing, merging, deploying, or changing Pages settings.
+The user has explicitly approved public publication of the eight reviewed sanitized screenshots, six reviewed sanitized certificate previews, the graduation portrait and optimized derivative, the updated one-page hybrid ATS résumé, and the approved email/mobile/profile links and city-level location. Approval applies only to the exact reviewed bytes and information recorded in the release manifest. Certificate originals and local contact sheets remain private outside the served workspace and release inventory. These content approvals do not authorize staging additions, committing, pushing, merging, deploying, or changing Pages settings.
 
 Private originals remain outside the repository and served workspace. Never copy them into source, public assets or build output. Environment files, credentials, keys, QA artifacts and machine configuration are ignored. The `.env.example` exception is only for a deliberately reviewed, secret-free template; no example file is currently supplied. Vite adds private-path access denial; Git ignore rules alone do not restrict HTTP access.
 
-Only the reviewed `dist/` directory may be uploaded as a Pages artifact. Do not publish the complete checkout or migrate the old PHP form. Exactly 49 approved obsolete V1 files have been removed from the V2 working tree and their deletions are staged locally for review. V1 remains preserved through its original Git history, local legacy branch, annotated tag and recovery bundle. The ignored legacy directory is not a public release asset.
+Only the reviewed `dist/` directory may be uploaded as a Pages artifact. Do not publish the complete checkout or migrate the old PHP form. Exactly 49 approved obsolete V1 files were removed in the V2 baseline commit. V1 remains preserved through its original Git history, legacy branch, annotated tag and recovery bundle. The ignored legacy directory is not a public release asset.
 
 ## Inert deployment workflow
 
 `.github/workflows/pages.yml` is manual-only. It requires `main`, an exact authorized commit SHA, and `PAGES_RELEASE_ENABLED=true`; unset variables keep it inactive. Strict validation verifies recorded exact asset/contact approval and rejects tracked V1 remnants or changed asset bytes. Approval metadata is a content record, not deployment authorization. Build and deployment have separate least-privilege permissions. Configure the `github-pages` environment with required reviewers and main-only branch restrictions before enabling anything. The workflow cannot configure those protections itself.
 
-See `RELEASE_PLAN.md` for the exact proposed staging/removal lists and authorization sequence. Only the 49 approved V1 deletions are staged; V2 additions and documentation remain unstaged. Nothing has been committed or published. Portable checks and hash inventories are safeguards, not proof that screenshots, PDF contents or factual claims are safe. Human review remains mandatory.
+See `RELEASE_PLAN.md` for the exact reviewed inventory and authorization sequence. The current hybrid résumé and certificate-gallery work is local and unstaged; earlier baseline/correction commits are preserved. No new Git publication or deployment is authorized. Portable checks and hash inventories are safeguards, not proof that screenshots, PDF contents or factual claims are safe. Human review remains mandatory.
 
 ## Local regression checks
 

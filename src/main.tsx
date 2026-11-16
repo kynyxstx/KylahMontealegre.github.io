@@ -4,8 +4,9 @@ import './styles.css'
 import { ProfileImage } from './components/ProfileImage'
 import { ProjectCard } from './components/ProjectCard'
 import { ProjectArchive } from './components/ProjectArchive'
+import { CertificationsGallery } from './components/CertificationsGallery'
 import { projects } from './data/projects'
-import { internshipDates, training } from './data/profile'
+import { internshipDates } from './data/profile'
 
 const resumeUrl = `${import.meta.env.BASE_URL}resume/Kylah_Montealegre_Resume.pdf`
 
@@ -60,6 +61,7 @@ function App() {
           </div>
         </div>
       </section>
+      <CertificationsGallery />
       <section id="experience" className="section shell grid md:grid-cols-[1fr_2fr] gap-8">
         <p className="section-label">02 / EXPERIENCE</p>
         <div><h2>Learning through doing.</h2><p className="experience-organization">Philippine Statistics Authority Headquarters</p>
@@ -88,7 +90,6 @@ function App() {
             <div><h3>System maintenance</h3><p className="note">Debugging, troubleshooting & enhancement</p></div>
             <div><h3>Administrative operations</h3><p className="note">Procurement documentation, records & coordination</p></div>
           </div>
-          <div className="training"><h3>Relevant training</h3><ul className="training-list">{training.map(item => <li key={item.title}><h4>{item.title}</h4><p className="note">{[item.provider, item.year].filter(Boolean).join(' · ')}</p>{item.note && <p className="note training-note">{item.note}</p>}</li>)}</ul></div>
         </div>
       </section>
       <section id="contact" className="section shell contact"><p className="section-label">05 / CONTACT</p><h2>Good things start<br />with a conversation<span>.</span></h2><address className="mt-8 max-w-2xl not-italic">
