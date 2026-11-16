@@ -1,0 +1,304 @@
+{
+  "schemaVersion": 1,
+  "publicationApproved": true,
+  "base": "/KylahMontealegre.github.io/",
+  "siteUrl": "https://kynyxstx.github.io/KylahMontealegre.github.io/",
+  "sourceFiles": [
+    ".gitattributes",
+    ".github/workflows/pages.yml",
+    ".gitignore",
+    "README.md",
+    "RELEASE_PLAN.md",
+    "index.html",
+    "package-lock.json",
+    "package.json",
+    "public/apple-touch-icon.png",
+    "public/favicon-16.png",
+    "public/favicon-32.png",
+    "public/favicon.svg",
+    "public/images/profile-ky-720.jpg",
+    "public/images/profile-ky.png",
+    "public/images/certifications/authenticity-provenance-ai.png",
+    "public/images/certifications/cybersecurity-for-all.png",
+    "public/images/certifications/digital-marketing.png",
+    "public/images/certifications/ieee-student-summit.png",
+    "public/images/certifications/mos-word-associate.png",
+    "public/images/certifications/ngpa-irr.png",
+    "public/images/projects/.gitkeep",
+    "public/images/projects/archive/atm.jpg",
+    "public/images/projects/archive/chess.PNG",
+    "public/images/projects/archive/cisco.PNG",
+    "public/images/projects/archive/hotel.PNG",
+    "public/images/projects/archive/maze.PNG",
+    "public/images/projects/archive/oga.png",
+    "public/images/projects/archive/prod.PNG",
+    "public/images/projects/archive/tren.PNG",
+    "public/images/projects/capstone/email-alert.png",
+    "public/images/projects/capstone/hardware-monitor.png",
+    "public/images/projects/capstone/login.png",
+    "public/images/projects/capstone/sms-alert.png",
+    "public/images/projects/internship/home.png",
+    "public/images/projects/internship/supplier-directory.png",
+    "public/images/projects/pms/admin-dashboard.png",
+    "public/images/projects/pms/dashboard.png",
+    "public/resume/Kylah_Montealegre_Resume.pdf",
+    "scripts/release-manifest.json",
+    "scripts/validate-release.mjs",
+    "src/components/CaseStudyGallery.tsx",
+    "src/components/CertificationsGallery.tsx",
+    "src/components/ProfileImage.tsx",
+    "src/components/ProjectArchive.tsx",
+    "src/components/ProjectCard.tsx",
+    "src/data/archive.ts",
+    "src/data/profile.ts",
+    "src/data/projects.ts",
+    "src/main.tsx",
+    "src/styles.css",
+    "src/vite-env.d.ts",
+    "tsconfig.json",
+    "vite.config.ts"
+  ],
+  "legacyRemovals": [
+    "css/animate.min.css",
+    "css/aos.css",
+    "css/bootstrap.css",
+    "css/bootstrap.min.css",
+    "css/style.css",
+    "fonts/glyphicons-halflings-regular.eot",
+    "fonts/glyphicons-halflings-regular.svg",
+    "fonts/glyphicons-halflings-regular.ttf",
+    "fonts/glyphicons-halflings-regular.woff",
+    "fonts/glyphicons-halflings-regular.woff2",
+    "img/Signature.svg",
+    "img/about-img.jpg",
+    "img/about.jpg",
+    "img/cover.jpg",
+    "img/favicon.ico",
+    "img/home-bg-2.jpg",
+    "img/portfolio/01.jpg",
+    "img/portfolio/010.jpg",
+    "img/portfolio/02.jpg",
+    "img/portfolio/03.jpg",
+    "img/portfolio/04.jpg",
+    "img/portfolio/05.jpg",
+    "img/portfolio/06.jpg",
+    "img/portfolio/07.jpg",
+    "img/portfolio/08.jpg",
+    "img/portfolio/09.jpg",
+    "img/portfolio/atm.jpg",
+    "img/portfolio/chess.PNG",
+    "img/portfolio/cisco.PNG",
+    "img/portfolio/film.PNG",
+    "img/portfolio/hotel.PNG",
+    "img/portfolio/maze.PNG",
+    "img/portfolio/oga.png",
+    "img/portfolio/prod.PNG",
+    "img/portfolio/tren.PNG",
+    "ionicons/css/ionicons.min.css",
+    "ionicons/fonts/ionicons.eot",
+    "ionicons/fonts/ionicons.svg",
+    "ionicons/fonts/ionicons.ttf",
+    "ionicons/fonts/ionicons.woff",
+    "js/aos.js",
+    "js/bootstrap.min.js",
+    "js/custom.js",
+    "js/jquery.form.js",
+    "js/jquery.js",
+    "js/jquery.stellar.min.js",
+    "js/jquery.validate.min.js",
+    "js/plugins.js",
+    "process.php"
+  ],
+  "publicAssets": [
+    {
+      "file": "public/apple-touch-icon.png",
+      "sha256": "c335a47f2fa387adde80f8dd74558aa1cda8c05e0c2000e994bdf162e68ae3a6",
+      "publicationReviewRequired": false,
+      "approvalBasis": "Previously reviewed portfolio branding or preserved public Legacy V1 archive image; unchanged inventory"
+    },
+    {
+      "file": "public/favicon-16.png",
+      "sha256": "49dacb237678ee5cd0a1b60dd459cdd2df5201cd19de1a119dad34a2c1a4478d",
+      "publicationReviewRequired": false,
+      "approvalBasis": "Previously reviewed portfolio branding or preserved public Legacy V1 archive image; unchanged inventory"
+    },
+    {
+      "file": "public/favicon-32.png",
+      "sha256": "5813b5b337f215b8778f85ec0d6e24d0a9c76d0147b4cf4595da4f2cf58b274c",
+      "publicationReviewRequired": false,
+      "approvalBasis": "Previously reviewed portfolio branding or preserved public Legacy V1 archive image; unchanged inventory"
+    },
+    {
+      "file": "public/favicon.svg",
+      "sha256": "f68c7604205f62f7c5db86a705f929e20912f319a73a95d1e7bfd2140d167cfc",
+      "publicationReviewRequired": false,
+      "approvalBasis": "Previously reviewed portfolio branding or preserved public Legacy V1 archive image; unchanged inventory"
+    },
+    {
+      "file": "public/images/profile-ky-720.jpg",
+      "sha256": "95ae6bcb3d6a899cc02286f8854827aa758c3688bb6e2174f5bb1d68fb5577f1",
+      "publicationReviewRequired": false,
+      "approvalBasis": "Explicit user public-publication approval for these exact reviewed bytes"
+    },
+    {
+      "file": "public/images/profile-ky.png",
+      "sha256": "e149522e053a64e6a4a67ea8e1e518564901f100bc90ae4313ce6c9463394f60",
+      "publicationReviewRequired": false,
+      "approvalBasis": "Explicit user public-publication approval for these exact reviewed bytes"
+    },
+    {
+      "file": "public/images/projects/archive/atm.jpg",
+      "sha256": "28a10545827313fd139e89a8e9b580c50c53de207320b0aa970feae2c3adbde6",
+      "publicationReviewRequired": false,
+      "approvalBasis": "Previously reviewed portfolio branding or preserved public Legacy V1 archive image; unchanged inventory"
+    },
+    {
+      "file": "public/images/projects/archive/chess.PNG",
+      "sha256": "f1f825ecb9033f1fe0f054a4cbce52dad1c8407112a04968a23439eac960b81f",
+      "publicationReviewRequired": false,
+      "approvalBasis": "Previously reviewed portfolio branding or preserved public Legacy V1 archive image; unchanged inventory"
+    },
+    {
+      "file": "public/images/projects/archive/cisco.PNG",
+      "sha256": "c3fbe7e6ebe7f14f1555d9310963475de0fe250afc0e60f914ebb18f89da80c5",
+      "publicationReviewRequired": false,
+      "approvalBasis": "Previously reviewed portfolio branding or preserved public Legacy V1 archive image; unchanged inventory"
+    },
+    {
+      "file": "public/images/projects/archive/hotel.PNG",
+      "sha256": "47c4d16c34a719cba5d60f2d5168c79c5955e9fa120c19d459651ef8b1e3d5f8",
+      "publicationReviewRequired": false,
+      "approvalBasis": "Previously reviewed portfolio branding or preserved public Legacy V1 archive image; unchanged inventory"
+    },
+    {
+      "file": "public/images/projects/archive/maze.PNG",
+      "sha256": "8cb4d2ed0f9e3728d0ffaa4dd2027f1951dfd64c7a9c282399c3bfefff811c8f",
+      "publicationReviewRequired": false,
+      "approvalBasis": "Previously reviewed portfolio branding or preserved public Legacy V1 archive image; unchanged inventory"
+    },
+    {
+      "file": "public/images/projects/archive/oga.png",
+      "sha256": "da51db76f9757f047ac769b7a5569dce3c2ed2a067da5c60e74ec13f2a1a9692",
+      "publicationReviewRequired": false,
+      "approvalBasis": "Previously reviewed portfolio branding or preserved public Legacy V1 archive image; unchanged inventory"
+    },
+    {
+      "file": "public/images/projects/archive/prod.PNG",
+      "sha256": "5705dc8bbd3976a8bf3195f98c1a4cc1ca1145dfa93fc979ff1b5258e050abd1",
+      "publicationReviewRequired": false,
+      "approvalBasis": "Previously reviewed portfolio branding or preserved public Legacy V1 archive image; unchanged inventory"
+    },
+    {
+      "file": "public/images/projects/archive/tren.PNG",
+      "sha256": "b87375784837865d4f6786d4f1ea34d364cce02a71c8e98502e19ce283bedb81",
+      "publicationReviewRequired": false,
+      "approvalBasis": "Previously reviewed portfolio branding or preserved public Legacy V1 archive image; unchanged inventory"
+    },
+    {
+      "file": "public/images/projects/capstone/email-alert.png",
+      "sha256": "95a3dadb433a12263ec033f60ccf52587b84737bfe47d9d8bfa5d047dd66f318",
+      "publicationReviewRequired": false,
+      "approvalBasis": "Explicit user public-publication approval for these exact reviewed bytes"
+    },
+    {
+      "file": "public/images/projects/capstone/hardware-monitor.png",
+      "sha256": "62a2ec646dc77a1caf28a522a2d2e95fa68350877228a67ad748d50561191a4e",
+      "publicationReviewRequired": false,
+      "approvalBasis": "Explicit user public-publication approval for these exact reviewed bytes"
+    },
+    {
+      "file": "public/images/projects/capstone/login.png",
+      "sha256": "e3e7ff7735ca8d9776fe59f95de432ec77b374ed05a0f5a81c0672378304a648",
+      "publicationReviewRequired": false,
+      "approvalBasis": "Explicit user public-publication approval for these exact reviewed bytes"
+    },
+    {
+      "file": "public/images/projects/capstone/sms-alert.png",
+      "sha256": "fa824580f16dee5d0b0735f22ba6a0c83ebe95bd1d94c99b5e84f5e5944b4899",
+      "publicationReviewRequired": false,
+      "approvalBasis": "Explicit user public-publication approval for these exact reviewed bytes"
+    },
+    {
+      "file": "public/images/projects/internship/home.png",
+      "sha256": "e25e41f134c7955e1ddf8075fcdf756f88c3d0cd889ca86f8a1f7acf42ff1a39",
+      "publicationReviewRequired": false,
+      "approvalBasis": "Explicit user public-publication approval for these exact reviewed bytes"
+    },
+    {
+      "file": "public/images/projects/internship/supplier-directory.png",
+      "sha256": "d11d32fbb287a2db816eac2f288fc46cb22218e8d8abd5755b7aa92ea4453ce9",
+      "publicationReviewRequired": false,
+      "approvalBasis": "Explicit user public-publication approval for these exact reviewed bytes"
+    },
+    {
+      "file": "public/images/projects/pms/admin-dashboard.png",
+      "sha256": "1510052baf427da7eb83f6bb11eda4025844321451261cca06c8869c8349eaf8",
+      "publicationReviewRequired": false,
+      "approvalBasis": "Explicit user public-publication approval for these exact reviewed bytes"
+    },
+    {
+      "file": "public/images/projects/pms/dashboard.png",
+      "sha256": "7a26e9daf57ef31abbb7f757bfd7ca3942305f884d95a04ab896b9a873e71f1f",
+      "publicationReviewRequired": false,
+      "approvalBasis": "Explicit user public-publication approval for these exact reviewed bytes"
+    },
+    {
+      "file": "public/resume/Kylah_Montealegre_Resume.pdf",
+      "sha256": "3dc0087d8cd48308e676499e9d2aaeb140025602b3fdf1aa44f0318e7d235fc8",
+      "publicationReviewRequired": false,
+      "approvalBasis": "Explicit owner public publication approval (CODEX 33) of the exact C2PA-free, LinkedIn-corrected PDF SHA-256 recorded here; no Git or deployment authorization",
+      "reviewStatus": "owner-approved",
+      "previousApprovedSha256": "1d617a987d37804561b79f520895f495cb0d7c07e4dba63a461671ec035d25d4"
+    },
+    {
+      "file": "public/images/certifications/authenticity-provenance-ai.png",
+      "sha256": "3a9ec8ac94cb74efaa0f1795b748d4311024270f1c2b1ec14e379653970133c5",
+      "publicationReviewRequired": false,
+      "approvalBasis": "Explicit user public-publication approval of this exact privacy-sanitized certificate preview; confidential original excluded"
+    },
+    {
+      "file": "public/images/certifications/cybersecurity-for-all.png",
+      "sha256": "569b2804b40bb65a3ac6fd873a3e1a5613fe0482e228a2469520867bd8943e74",
+      "publicationReviewRequired": false,
+      "approvalBasis": "Explicit user public-publication approval of this exact privacy-sanitized certificate preview; confidential original excluded"
+    },
+    {
+      "file": "public/images/certifications/ngpa-irr.png",
+      "sha256": "d8bb77819990f8e8126bc95629f0228e3f942f975cd377cb1d36cae4e9dec293",
+      "publicationReviewRequired": false,
+      "approvalBasis": "Explicit user public-publication approval of this exact privacy-sanitized certificate preview; confidential original excluded"
+    },
+    {
+      "file": "public/images/certifications/digital-marketing.png",
+      "sha256": "6be9aa9a0b21ad8026c8a06b7509b9a97880c430b25a75150f0dacb2ad027a72",
+      "publicationReviewRequired": false,
+      "approvalBasis": "Explicit user public-publication approval of this exact privacy-sanitized certificate preview; confidential original excluded"
+    },
+    {
+      "file": "public/images/certifications/ieee-student-summit.png",
+      "sha256": "342cc831b9512cb5ba67aa005e4707238c5536d434912259fd38b0260a46267b",
+      "publicationReviewRequired": false,
+      "approvalBasis": "Explicit user public-publication approval of this exact privacy-sanitized certificate preview; confidential original excluded"
+    },
+    {
+      "file": "public/images/certifications/mos-word-associate.png",
+      "sha256": "36b10b7563ea0c8b8a3d1855bd6e69d0f10ed53f8cea58d845f004dcacebbebb",
+      "publicationReviewRequired": false,
+      "approvalBasis": "Explicit user public-publication approval of this exact privacy-sanitized certificate preview; confidential original excluded"
+    }
+  ],
+  "approvalScope": "Exact reviewed public asset bytes and approved contact information only. No Git commit, push, merge, deployment, or Pages configuration change is authorized.",
+  "confidentialOriginalsApproved": false,
+  "contactApproval": {
+    "approved": true,
+    "source": "src/main.tsx#contact",
+    "fields": [
+      "email",
+      "mobile",
+      "GitHub",
+      "LinkedIn",
+      "city-level location"
+    ],
+    "sha256": "68e37691b2df11b1c6b66dece358b9913823b28f1260a9227f05146953a19c75"
+  }
+}

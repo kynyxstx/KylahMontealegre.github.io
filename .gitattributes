@@ -1,0 +1,2 @@
+# Preserve the exact reviewed SVG bytes; all other paths keep existing behavior.
+/public/favicon.svg -text -filter -ident -working-tree-encoding
