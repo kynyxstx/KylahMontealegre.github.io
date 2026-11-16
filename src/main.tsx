@@ -96,7 +96,7 @@ function App() {
           <dl className="grid gap-6 sm:grid-cols-2">
             <div><dt className="tiny-label">Email</dt><dd className="mt-2 text-sm"><a className="underline underline-offset-4" href="mailto:kylahmaym@gmail.com">kylahmaym@gmail.com</a></dd></div>
             <div><dt className="tiny-label">Mobile</dt><dd className="mt-2 text-sm"><a className="underline underline-offset-4" href="tel:+639184102687">+63 918 410 2687</a></dd></div>
-            <div><dt className="tiny-label">Professional profiles</dt><dd className="mt-2 flex flex-wrap gap-6 text-sm"><a className="underline underline-offset-4" href="https://github.com/kynyxstx" target="_blank" rel="noopener noreferrer">GitHub<span className="sr-only"> (opens in a new tab)</span></a><a className="underline underline-offset-4" href="https://www.linkedin.com/in/kylah-montealegre/" target="_blank" rel="noopener noreferrer">LinkedIn<span className="sr-only"> (opens in a new tab)</span></a></dd></div>
+            <div><dt className="tiny-label">Professional profiles</dt><dd className="mt-2 flex flex-wrap gap-6 text-sm"><a className="underline underline-offset-4" href="https://github.com/kynyxstx" target="_blank" rel="noopener noreferrer">GitHub<span className="sr-only"> (opens in a new tab)</span></a><a className="underline underline-offset-4" href="https://www.linkedin.com/in/kymdm/" target="_blank" rel="noopener noreferrer">LinkedIn<span className="sr-only"> (opens in a new tab)</span></a></dd></div>
             <div><dt className="tiny-label">Location</dt><dd className="mt-2 text-sm">Quezon City, Philippines</dd></div>
           </dl>
         </address>

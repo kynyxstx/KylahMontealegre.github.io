@@ -11,7 +11,7 @@ function privateFileProtection(): Plugin {
       let pathname: string
       try { pathname = decodeURIComponent(((req as { url?: string }).url || '/').split('?')[0]).replaceAll('\\', '/') }
       catch { res.statusCode = 400; res.end('Bad request'); return }
-      if (pathname.split('/').some(segment => (segment.startsWith('.') && !(segment === '.vite' && /\/node_modules\/\.vite\/deps\//.test(pathname))) || /^(private-project-screenshots|portfolio-ky-private|certification)$/i.test(segment) || /^(ATS|Kylah_Montealegre_ATS_.*_REVIEW)\.pdf$/i.test(segment))) {
+      if (pathname.split('/').some(segment => (segment.startsWith('.') && !(segment === '.vite' && /\/node_modules\/\.vite\/deps\//.test(pathname))) || /^(private-project-screenshots|portfolio-ky-private|certification)$/i.test(segment) || /^(ATS|Kylah_Montealegre_ATS(?:_.*_REVIEW)?)\.pdf$/i.test(segment))) {
         res.statusCode = 403
         res.end('Access denied')
         return
@@ -30,7 +30,7 @@ export default defineConfig({
     fs: {
       strict: true,
       allow: [decodeURIComponent(new URL('.', import.meta.url).pathname).replace(/^\/([A-Za-z]:)/, '$1')],
-      deny: ['**/.*/**', '**/.env*', '**/*.{crt,pem,key}', '**/private-project-screenshots/**', '**/Portfolio-KY-Private/**', '**/Certification/**', '**/*_REVIEW.pdf', '**/ATS.pdf'],
+      deny: ['**/.*/**', '**/.env*', '**/*.{crt,pem,key}', '**/private-project-screenshots/**', '**/Portfolio-KY-Private/**', '**/Certification/**', '**/*_REVIEW.pdf', '**/ATS.pdf', '**/Kylah_Montealegre_ATS.pdf'],
     },
   },
 })

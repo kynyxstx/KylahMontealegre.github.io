@@ -1,5 +1,19 @@
 # Proposed V2 staging manifest
 
+## Current local candidate: résumé LinkedIn correction
+
+The owner-exported `Kylah_Montealegre_ATS.pdf` was verified and installed locally byte-for-byte before the C2PA cleanup described below. Both visible LinkedIn text and its hyperlink use `/in/kymdm/`; the previous URL is absent. All other extracted professional text and link targets match the prior hybrid PDF. A rendered comparison confines pixel changes to the header links row; the remaining page is unchanged. The PDF remains searchable, selectable and one-page A4.
+
+
+C2PA cleanup: a separate pdf-lib 1.17.1 derivative replaces the local candidate after verified private backup. Embedded credentials, catalog associations and provenance claims are removed. Source SHA-256: `18fff2726aa5a66cd1b50e5141875d2dee25678d7ad209dc07a7e48653f8b13a`. All page content/font streams, extracted text order and four hyperlinks are preserved; rendering comparison shows zero differing pixels at 2000 x 2829. **Owner-approved exact clean PDF (CODEX 33)**; no original Content Credentials signature is claimed for this derivative.
+
+- Approved SHA-256: `3dc0087d8cd48308e676499e9d2aaeb140025602b3fdf1aa44f0318e7d235fc8`.
+- Status: **owner-approved for public publication of these exact bytes only**. No staging, commit, push or deployment authorization.
+- Previous approved SHA-256: `1d617a987d37804561b79f520895f495cb0d7c07e4dba63a461671ec035d25d4`; its verified private backup remains outside the repository.
+- The manifest records this exact approved hash and clears only its pending asset review. Existing strict validation remains unchanged; all previously approved asset records are preserved.
+- The other 28 approved public assets are byte-identical. Root export files remain ignored and denied over HTTP.
+- No staging, commit, push, PR transition, merge, deployment or settings change is authorized. Earlier statements below record historical versions; the exact current PDF approval is recorded above.
+
 ## Current local review: hybrid résumé and credential gallery
 
 The latest authorized work is local implementation only: no staging, commits, pushes, PR changes, merges or deployment. Earlier authorizations below describe completed release history and do not authorize new Git operations.

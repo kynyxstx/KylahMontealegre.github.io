@@ -18,6 +18,7 @@ const prohibited = file => file.split('/').some(segment => segment.startsWith('.
   || /^(legacy|certification|private-project-screenshots|portfolio-ky-private|node_modules|backups?|source-backups?)$/i.test(segment)
   || /_REVIEW\.pdf$/i.test(segment)
   || /^ATS\.pdf$/i.test(segment)
+  || /^Kylah_Montealegre_ATS\.pdf$/i.test(segment)
   || /\.(php|pem|key|p12|pfx|bundle|zip|bak|tsbuildinfo)$/i.test(segment)
   || /^(credentials|secrets?|service-account)([.-]|$)/i.test(segment))
 
